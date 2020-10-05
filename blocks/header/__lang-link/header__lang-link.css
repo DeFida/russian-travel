@@ -1,0 +1,30 @@
+.header__lang-link {
+  width: 30px;
+  height: 28px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
+  margin: 0;
+  /* identical to box height, or 117% */
+  color: #ffffff;
+}
+
+.header__lang-link:first-of-type {
+  text-decoration-line: underline;
+  margin-left: calc(100% - (176px + 18px + 29px + 30px));
+  margin-right: 18px;
+  /* 100% - (176px + 18px + 29px + 30px) */
+}
+
+@media screen and (max-width: 767px) {
+  .header__lang-link:first-of-type {
+    margin-left: calc(100% - (142px + 18px + 44px));
+    /* 100% - (176px + 18px + 29px + 30px) */
+  }
+  .header__lang-link {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
