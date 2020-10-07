@@ -1,9 +1,10 @@
 .header {
   margin: 28px auto 0;
   padding: 0;
-  display: flex;
-  align-items: flex-end;
-  height: 52px;
+  display: grid;
+  grid-template-columns: 1fr min-content min-content;
+  align-items: end;
+  justify-content: space-between;
   min-width: 288px;
   max-width: 1184px;
 }
@@ -23,7 +24,6 @@
 @media screen and (max-width: 767px) {
   .header {
     width: calc(100% - 32px);
-    height: 42px;
     margin: 16px auto 0;
   }
 }
